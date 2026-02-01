@@ -1,8 +1,8 @@
-# ZYZ Robot Laser Draw (MATLAB)
+# ZYZ Robot Laser Draw
 
 Overview
 - A MATLAB project that simulates a 3-DOF robot arm with a laser end-effector which "draws" shapes on a virtual wall. The code computes inverse kinematics, generates smooth interpolated joint trajectories, computes dynamics (joint torques), and animates the arm while plotting the laser trace on the wall.
-![Figure showing result of the arm having drawn the Apple logo](/data/Drawn-Apple.png)
+![Heart Drawing](/data/Drawn-Heart-Looping.gif)
 
 Key Features
 - Inverse kinematics solver to compute joint targets for Cartesian waypoints.
@@ -50,7 +50,7 @@ Notes & Tips
 Examples
 - Draw the heart shape: set `shape = 'heart'` in `main.m` and run.
 - Trace an image: set `use_image = true` and provide a valid image path in the `if use_image` branch of `main.m`.
-![Heart Drawing](/data/Drawn-Heart.gif)
+![Figure showing result of the arm having drawn the Apple logo](/data/Drawn-Apple.png)
 - Results are influenced by the link lengths specifiied in the DH table, the distance from the wrist to the wall, the input image, and the scaling factor
     - Sometimes, parameters result in computations that are outside of the dexterous workspace, and in these cases, proper interpolation is impossible. Resulting trajectories may be inaccurate as the arm rapidly switches between configurations.
     - Because the laser is awlays on, the arm will do its best to draw the final shape as accurately as possible given some extra connections between what would otherwise be disconnected points.
