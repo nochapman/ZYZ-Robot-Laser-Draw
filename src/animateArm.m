@@ -6,7 +6,7 @@ function animateArm(ikSolutions, torques)
     wall_x = 10; %
     wall_pts = [ [wall_x; -5; -5] [wall_x; 5; -5] [wall_x; 5; 5] [wall_x; -5; 5] ];
     
-    dt = 0.05; % Simulation step delay
+    dt = 0.02; % Simulation step delay
 
     % Screen tiling logic
     scrsz = get(0, 'ScreenSize');

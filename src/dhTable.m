@@ -5,7 +5,7 @@ function value = dhTable(link, column)
     
     % Define parameters for each joint
     %         [a,   d,   alpha,   theta_offset]
-    link_len = 1;
+    link_len = .5;
     table = [0,  link_len,    pi/2,   0;
             0,   link_len,   -pi/2,    0  ;
             link_len,     0,       0,    0;
