@@ -1,0 +1,4 @@
+*.asv
+*.obsidian
+*.mat
+.DS_Store
